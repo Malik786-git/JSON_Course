@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+</body>
+<script>
+    // note that: Json syntax valid in Js
+//     let students = [
+//     {
+//         "name":"malik",
+//         "age":22,
+//         "height": 170
+//     },
+//     {
+//         "name":"ashar",
+//         "age":21,
+//         "height": 180
+//     }
+// ]
+// console.log(students)
+
+// //////////////////////////////////
+// let students = `[
+//     {
+//         "name":"malik",
+//         "age":22,
+//         "height": 170
+//     },
+//     {
+//         "name":"ashar",
+//         "age":21,
+//         "height": 180
+//     }
+// ]`;
+// console.log(students)
+
+// console.log(JSON.parse(students));
+// console.log(JSON.parse(students)[1].name);
+/////////////////////////////////////////////
+
+//    var jsonObj = {
+//         "name":"ashar",
+//         "age":21,
+//         "height": 180
+//    }
+// //   document.write(jsonObj.name)
+//    for (key in jsonObj) {
+//        document.write(jsonObj[key] + "<br>")
+//    }
+////////////////////////////////////////////////
+
+var jsonObj1 = {
+  students:[
+               {
+                   "name": "malik",
+                   "age": 22,
+                   "height": 5.10
+                },
+               {
+                   "name": "Jahangir",
+                   "age": 21,
+                   "height": 6
+                }
+           ]
+};
+
+console.log(jsonObj1.students[1].height);
+
+for( i in jsonObj1.students)
+{
+    //  console.log(i)
+     for( j in jsonObj1.students[i])
+     {
+           console.log(jsonObj1.students[i][j])
+      }
+}
+</script>
+<script src="app.js"></script>
+</html>
